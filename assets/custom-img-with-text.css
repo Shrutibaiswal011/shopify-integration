@@ -1,0 +1,143 @@
+.img-text-wrapper {
+  max-width: 100%;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  gap: 70px;
+  margin-left: 30px;
+  margin-right: 30px;
+  padding: 40px 20px;
+  height: auto;
+}
+
+.img-text-wrapper.image-left {
+  flex-direction: row;
+}
+
+.img-text-wrapper.image-right {
+  flex-direction: row-reverse;
+}
+
+.img-box img {
+  width: 100%;
+  display: block;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img-box {
+  transition: width 0.3s ease;
+  height: auto;
+}
+
+.img-box--small {
+  width: 40%;
+}
+
+.img-box--medium {
+  width: 60%;
+}
+
+.img-box--large {
+  width: 85%;
+}
+
+.sub-heading{
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+
+.text-box h2 {
+  font-weight: 700;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  line-height: 1.2;
+}
+
+
+.text-box p {
+  line-height: 1.8;
+  margin-top: 10px;
+}
+
+.btn-wrapper{
+  margin-top: 40px;
+}
+
+.view_button{
+  padding: 14px 30px;
+  background-color: rgba(74, 23, 121, 0.76);
+  color: white;
+  font-weight: 700;
+  border-radius: 20px;
+  border: none;
+  text-decoration: none;
+  transition: all 0.5 linear;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.view_button:hover {
+  background: #54267E;
+}
+
+.view_button:active {
+  transform: scale(0.97);
+}
+
+@media (max-width: 767px) {
+
+  .img-text-wrapper {
+    margin-left: 20px;
+    margin-top: 70px;
+    margin-right: 20px;
+    flex-direction: column !important; 
+    align-items: center;
+    padding: 20px 0px 10px 0px;
+    gap: 20px;
+  }
+
+  .sub-heading{
+    font-weight: 600;
+    font-size: 14px !important;
+    margin-bottom: 0px;
+  }
+
+  .img-box {
+    width: 100% !important;
+    height: 550px;
+    flex-shrink: 0;
+  }
+
+  .img-box img{
+    height: 100%;
+    aspect-ratio: 3 / 4;
+    
+  }
+
+  .text-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .text-box h2 {
+    font-weight: 700;
+    margin-bottom: 5px;
+    margin-top: 9px;
+    font-size: 24px !important;
+  }
+
+  .text-box p {
+    font-size: 15px !important;
+    line-height: 1.6;
+    margin-bottom: 0px;
+  }
+
+  .btn-wrapper{
+    margin-top: 30px;
+  }
+
+}
+
